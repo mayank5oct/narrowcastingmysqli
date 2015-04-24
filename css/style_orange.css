@@ -1,0 +1,61 @@
+/*CSS RULES FOR SCHEME SPECIFIC BACKGROUND COLOR  */
+
+.header_wrap .nav ul li p{color:#FFA500;}
+
+.main_container .content a{color:#FFA500;}
+
+.main_container .content .title{color:#FFA500;}
+
+.main_container .vertical_gallery .blocks_container{border-bottom: 8px solid #FFA500;}
+
+.main_container .vertical_gallery .blocks_container .block .btn1, .main_container .vertical_gallery .blocks_container .block .btn2{background-color:#FFA500;}
+
+.main_container .grid_container{border-bottom: solid 8px #FFA500;}
+
+.grid_container2{border-top: 8px solid #FFA500;}
+
+.overlay_wrap{border-bottom: 8px solid #FFA500;}
+
+.find_btn{background:#FFA500;}
+
+.main_container .horizon_gallery2{border-bottom:8px solid #FFA500;}
+
+div.timeline_inputsize_error_msg  {background-color:#FFA500;}
+
+input #carrouel_total_time {color:#FFA500;}
+
+.upload_error {background-color:#FFA500;}
+
+.upload_success {background-color:#FFA500;}
+
+.green_btn_horizon{background:#FFA500;}
+
+.btn_active {background-color:#FFA500;}
+
+ #titel_wachttijden {color:#FFA500;}
+ 
+ #wachttijden_popup .title {color:#FFA500;}
+ 
+ #csvdata {background-color:#FFA500;}
+ 
+  #header_label {color:#FFA500;}
+ 
+ .main_container .grid_container table .grid_header_top{color:#FFA500;}
+
+/* CSS RULES FOR SCHEME SPECIFIC BACKGROUND ICON */
+
+.header{background:url(../img/orange/header_strip.jpg);}
+
+.main_container .vertical_gallery .tabs ul li a{background:url(../img/orange/tab_strip.png);}
+
+
+.main_container .horizon_gallery{background:#e5e5e5 url(../img/orange/hor_gallery_bg_strip.png);}
+
+
+.main_container .horizon_gallery1{background:#e5e5e5 url(../img/orange/hor_gallery_bg_strip.png);}
+
+
+.horiz_block .horiz_input_field input{width: 30px;height: 28px;background:url(../img/orange/input_strip.png);}
+
+
+span.deleteicon span {background: url('../img/orange/close_btn.png');}

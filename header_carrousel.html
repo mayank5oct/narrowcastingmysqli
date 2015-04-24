@@ -1,0 +1,65 @@
+<?php
+$delay_query = "select is_delay from theatre where status=1";
+$delay_set = $db->query($delay_query);
+$delay_data = mysql_fetch_array($delay_set);
+$url_query = "select url from theatre where status=1";
+$url_set = $db->query($url_query);
+$url_data = mysql_fetch_array($url_set);
+$narrowcasting_folder_query = "select is_client from narrowcasting_folder";
+$narrowcasting_folder_set = $db->query($narrowcasting_folder_query);
+$narrowcasting_folder_data = mysql_fetch_array($narrowcasting_folder_set);
+$master_query = "select is_master from narrowcasting_folder";
+$master_set = $db->query($master_query);
+$master_data = mysql_fetch_array($master_set);
+$regular_query = "select regular_carrousel_allowed from narrowcasting_folder";
+$regular_set = $db->query($regular_query);
+$regular_data = mysql_fetch_array($regular_set);
+   $folder_query = "select * from narrowcasting_folder";
+   $record_set = $db->query($folder_query);
+   $resultset = mysql_fetch_array($record_set);
+   $is_client = $resultset['is_client'];
+   $is_master = $resultset['is_master'];
+?>
+
+<div class="header">
+    	<div class="header_wrap">
+        	<!-- START LOGO AND HEADER TEXT -->
+        	<div class="logo_section">
+		            	<div class="logo"><img src="./img/logo/<?php echo $color_scheme_logo;?>" alt=""/>&nbsp;&nbsp;
+							<span id="header_label"><?php if($is_master==1){echo "Master";}if($is_client==1){
+				$client_query="select label from clients where is_active=1";
+				$rs=$db->query($client_query);
+				$record=mysql_fetch_array($rs);
+				echo $record[0];
+		
+				}?>
+			</span></div>
+                <div class="header_text">
+                    <!--<img src="./img/header_img1.png" alt="" />-->
+                    <img src="./img/poweredby.png" alt="" />
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+			<!-- END LOGO AND HEADER TEXT -->           
+            <!-- START NAVIGATION  -->
+            <div class="nav">
+		<ul>
+                    <li><a id="overzicht" href="javascript:void(0)" onclick="autosave('1')">Overzicht<br /><span id="alle_carrousels">Alle carrousels</span></p></a></li>
+					<?php if($regular_data['regular_carrousel_allowed']==1):?>
+                    <li><a id="nieuw">Nieuw<br /><span id="maak_carrousel">Maak carrousel</span></a></li>
+					<?php endif;?>
+                    <li><a id="uploaden" href="javascript:void(0)" onclick="autosave('3')">Uploaden<br /><span id="nieuw_bestand">Nieuw bestand</p></a></li>
+					<li><a id="mededelingen" href="javascript:void(0)" onclick="autosave('5')">Mededelingen<br /><span id="iets_nieuws">Iets nieuws?</span></a></li>
+				    <?php if($delay_data['is_delay']==1 && $master_data['is_master']==0):?>
+				    <li><a id="delay_mededelingen" href="javascript:void(0)" onclick="autosave('8')">Wachttijden<br /><span id="spreekuur">Spreekuur</span></a></li>
+				    <?php endif;?>
+				    <?php if($url_data['url']==1 && $narrowcasting_folder_data['is_client']==0):?>
+				    <li><a id="url" href="javascript:void(0)" onclick="autosave('7')">URL's<br /><span id="nieuw_bestand">Dynamisch</span></a></li>
+				    <?php endif;?>
+                    <li><a id="uitloggen" href="javascript:void(0)" onclick="autosave('6')">Uitloggen<br /><span id="tot_ziens">Tot ziens!</span></a></li>  
+                </ul>            
+            </div>
+            <div class="clear"></div>
+            <!-- END NAVIGATION -->
+        </div>
+    </div>

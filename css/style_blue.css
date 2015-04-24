@@ -1,0 +1,61 @@
+/*CSS RULES FOR SCHEME SPECIFIC BACKGROUND COLOR  */
+
+.header_wrap .nav ul li p{color:#106ab1;}
+
+.main_container .content a{color:#106ab1;}
+
+.main_container .content .title{color:#106ab1;}
+
+.main_container .vertical_gallery .blocks_container{border-bottom: 8px solid #106ab1;}
+
+.main_container .vertical_gallery .blocks_container .block .btn1, .main_container .vertical_gallery .blocks_container .block .btn2{background-color:#106ab1;}
+
+.main_container .grid_container{border-bottom: solid 8px #106ab1;}
+
+.grid_container2{border-top: 8px solid #106ab1;}
+
+.overlay_wrap{border-bottom: 8px solid #106ab1;}
+
+.find_btn{background:#106ab1;}
+
+.main_container .horizon_gallery2{border-bottom:8px solid #106ab1;}
+
+div.timeline_inputsize_error_msg  {background-color:#106ab1;}
+
+input #carrouel_total_time {color:#106ab1;}
+
+.upload_error {background-color:#106ab1;}
+
+.upload_success {background-color:#106ab1;}
+
+.green_btn_horizon{background:#106ab1;}
+
+ #titel_wachttijden {color:#106ab1;}
+ 
+ #wachttijden_popup .title {color:#106ab1;}
+ 
+ .btn_active {background-color:#106ab1;}
+ 
+ .main_container .grid_container table .grid_header_top{color:#106ab1;}
+ 
+  #csvdata {background-color:#106ab1;}
+  
+  #header_label {color:#106ab1;}
+
+/* CSS RULES FOR SCHEME SPECIFIC BACKGROUND ICON */
+
+.header{background:url(../img/blue/header_strip.jpg);}
+
+.main_container .vertical_gallery .tabs ul li a{background:url(../img/blue/tab_strip.png);}
+
+
+.main_container .horizon_gallery{background:#e5e5e5 url(../img/blue/hor_gallery_bg_strip.png);}
+
+
+.main_container .horizon_gallery1{background:#e5e5e5 url(../img/blue/hor_gallery_bg_strip.png);}
+
+
+.horiz_block .horiz_input_field input{width: 30px;height: 28px;background:url(../img/blue/input_strip.png);}
+
+
+span.deleteicon span {background: url('../img/blue/close_btn.png');}

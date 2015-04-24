@@ -1,0 +1,63 @@
+/*CSS RULES FOR SCHEME SPECIFIC BACKGROUND COLOR  */
+
+.header_wrap .nav ul li p{color:#c30f0f;}
+
+.main_container .content a{color:#c30f0f;}
+
+.main_container .content .title{color:#c30f0f;}
+
+.main_container .vertical_gallery .blocks_container{border-bottom: 8px solid #c30f0f;}
+
+.main_container .vertical_gallery .blocks_container .block .btn1, .main_container .vertical_gallery .blocks_container .block .btn2{background-color:#c30f0f;}
+
+.main_container .grid_container{border-bottom: solid 8px #c30f0f;}
+
+.grid_container2{border-top: 8px solid #c30f0f;}
+
+.overlay_wrap{border-bottom: 8px solid #c30f0f;}
+
+.find_btn{background:#c30f0f;}
+
+.main_container .horizon_gallery2{border-bottom:8px solid #c30f0f;}
+
+div.timeline_inputsize_error_msg  {background-color:#c30f0f;}
+
+input #carrouel_total_time {color:#c30f0f;}
+
+.upload_error {background-color:#c30f0f;}
+
+.upload_success {background-color:#c30f0f;}
+
+.green_btn_horizon{background:#c30f0f;}
+
+ #titel_wachttijden {color:#c30f0f;}
+ 
+ #wachttijden_popup .title {color:#c30f0f;}
+ 
+ .btn_active {background-color:#c30f0f;}
+ 
+  .main_container .grid_container table .grid_header_top{color:#c30f0f;}
+  
+   #csvdata {background-color:#c30f0f;}
+
+ #header_label {color:#c30f0f;}
+ 
+ #fuzzNameContainer {background-color:#c30f0f;}
+ 
+/* CSS RULES FOR SCHEME SPECIFIC BACKGROUND ICON */
+
+.header{background:url(../img/red/header_strip.jpg);}
+
+.main_container .vertical_gallery .tabs ul li a{background:url(../img/red/tab_strip.png);}
+
+
+.main_container .horizon_gallery{background:#e5e5e5 url(../img/red/hor_gallery_bg_strip.png);}
+
+
+.main_container .horizon_gallery1{background:#e5e5e5 url(../img/red/hor_gallery_bg_strip.png);}
+
+
+.horiz_block .horiz_input_field input{width: 30px;height: 28px;background:url(../img/red/input_strip.png);}
+
+
+span.deleteicon span {background: url('../img/red/close_btn.png');}
